@@ -7,7 +7,6 @@ import { getEventById } from "../../dummy-data";
 function EventDetailsPage() {
   const router = useRouter();
   const eventId = router.query.eventId;
-
   const event = getEventById(eventId);
 
   if (!event) {
