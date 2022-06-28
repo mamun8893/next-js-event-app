@@ -5,13 +5,13 @@ function Button(props) {
   if (props.link) {
     return (
       <Link href={props.link}>
-        <a className={classes.button}>{props.children}</a>
+        <a className={classes.btn}>{props.children}</a>
       </Link>
     );
   }
 
   return (
-    <button onClick={props.onClick} className={classes.button}>
+    <button onClick={props.onClick} className={classes.btn}>
       {props.children}
     </button>
   );
